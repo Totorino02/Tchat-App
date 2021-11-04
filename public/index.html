@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Chat App</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1><i class="fas fa-smile"></i> TchatApp </h1>
+        <h5>The best of chat apps</h5>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div hidden= true class="form-control">
+						<label for="surname">Surname</label>
+						<input type="text" name="surname" id="surename" placeholder="Enter surname..."/>
+					</div>
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input type="text" name="username" id="username" placeholder="Enter username..." autocomplete="off" required />
+					</div>
+					
+					<div class="form-control">
+						<label for="room">Room</label>
+						<select name="room" id="room">
+							<option value="JavaScript">JavaScript</option>
+							<option value="PHP">PHP</option>
+							<option value="C">C</option>
+							<option value="Python">Python</option>
+							<option value="Java">Java</option>
+							<option value="Symfony">Symfony</option>
+							<option value="NodeJs">NodeJs</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Join Chat</button>
+				</form>
+			</main>
+		</div>
+	</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</html>
